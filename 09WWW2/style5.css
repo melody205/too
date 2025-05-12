@@ -1,0 +1,269 @@
+body {
+  font-family: 'Microsoft JhengHei', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: #ac87c5;
+  height: 55px;
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  padding: 0;
+  border: 5px solid #ac87c5;
+  border-bottom: none;
+  position: fixed;
+}
+
+.slogan {
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-left: 20px;
+}
+
+header p {
+  color: white;
+  position: absolute;
+  left: 30px;
+  top: 0%;
+  line-height: 45px;
+  font-size: 26px;
+  margin: 0;
+}
+
+header p a {
+  text-decoration: none;
+  color: white;
+}
+
+header ul {
+  position: absolute;
+  right: 2vw;
+  top: 0;
+  line-height: 45px;
+  list-style: none;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 3vw;
+  position: relative;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  background-color: #ffe5e5;
+}
+
+.help-section {
+  background-color: #ffe5e5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.help-section h2 {
+  margin-top: 40px;
+}
+
+.help-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #444;
+  font-size: 16px;
+}
+
+.help-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.help-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 320px;
+  flex: 1 1 300px;
+  transition: transform 0.2s ease;
+  text-align: left;
+}
+
+.help-card:hover {
+  transform: translateY(-5px);
+}
+
+.help-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.help-card h3 {
+  font-size: 18px;
+  margin: 16px 12px 8px;
+  color: #333;
+}
+
+.help-card p {
+  font-size: 15px;
+  margin: 0 12px 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.help-links {
+  margin-top: 50px;
+  background-color: #ffe5e5;
+  margin-bottom: 0;
+  padding-bottom: 60px;
+}
+
+.help-links h1 {
+  font-size: 20px;
+  color: #b04e83;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.link-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.link-buttons a {
+  background-color: #ffe0ef;
+  color: #b04e83;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.link-buttons a:hover {
+  background-color: #f8c7de;
+}.help-links {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffe6eb;
+}
+
+.help-links h1 {
+  font-size: 28px;
+  color: #b03060;
+  margin-bottom: 30px;
+}
+
+.link-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.link-buttons a {
+  background-color: #d66ba0; /* 按鈕色（可改其他色） */
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link-buttons a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  background-color: #ac87c5;
+  color: white;
+  padding: 40px 20px 20px 20px;
+  font-size: 14px;  
+  border-top: 5px solid #ac87c5;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {  
+  margin: 15px;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding-top: 15px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+
+@media (max-width: 768px) {
+  .about {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  header ul {
+      position: static;
+      text-align: center;
+      padding: 10px 0;
+  }
+
+  header li {
+      display: block;
+      margin: 5px 0;
+  }
+
+  header p {
+      position: static;
+      text-align: center;
+      line-height: 55px;
+      font-size: 22px;
+  }
+}

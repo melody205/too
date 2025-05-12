@@ -1,0 +1,271 @@
+body {
+    font-family: 'Microsoft JhengHei', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #ac87c5;
+    height: 55px;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    padding: 0;
+    border: 5px solid #ac87c5;
+    border-bottom: none;
+    position: fixed;
+}
+
+.slogan {
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-left: 20px;
+  }
+
+header p {
+    color: white;
+    position: absolute;
+    left: 30px;
+    top: 0%;
+    line-height: 45px;
+    font-size: 26px;
+    margin: 0;
+}
+
+header p a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul {
+    position: absolute;
+    right: 2vw;
+    top: 0;
+    line-height: 45px;
+    list-style: none;
+}
+
+header li {
+    display: inline-block;
+    margin-right: 3vw;
+    position: relative;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    background-color: #ffe5e5;
+}
+
+.policy-section {
+    background-color: #ffe5e5;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.policy-section h2 {
+    font-size: 32px;
+    color: #3a3a3a;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.policy-info {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: auto;
+}
+
+.policy-info h3 {
+    font-size: 24px;
+    color: #6a4c92;
+    margin-bottom: 15px;
+}
+
+.policy-info p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.policy-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.policy-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.policy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.policy-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.policy-card h4 {
+    font-size: 1.25rem;
+    margin: 16px 12px 8px;
+    color: #756ab6;
+}
+
+.policy-card p {
+    font-size: 0.95rem;
+    color: #555;
+    padding: 0 16px 20px;
+    line-height: 1.6;
+}
+
+
+.apply-steps,
+.support-links {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.apply-steps h3,
+.support-links h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #333;
+    border-left: 6px solid #756ab6;
+    padding-left: 12px;
+}
+
+.apply-steps ol,
+.support-links ul {
+    padding-left: 20px;
+}
+
+.apply-steps li,
+.support-links li {
+    margin-bottom: 16px;
+    line-height: 1.8;
+    color: #555;
+    text-align: left;
+}
+
+.apply-steps li strong,
+.support-links li strong {
+    color: #756ab6;
+}
+
+.support-links a {
+    color: #756ab6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.support-links a:hover {
+    color: #756ab6;
+    text-decoration: none;
+}
+
+
+
+footer {
+    background-color: #ac87c5;
+    color: white;
+    padding: 40px 20px 20px 20px;
+    font-size: 14px;  
+    border-top: 5px solid #ac87c5;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-section {  
+    margin: 15px;
+  }
+  
+  .footer-section h3 {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .footer-section a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    header ul {
+        position: static;
+        text-align: center;
+        padding: 10px 0;
+    }
+  
+    header li {
+        display: block;
+        margin: 5px 0;
+    }
+  
+    header p {
+        position: static;
+        text-align: center;
+        line-height: 55px;
+        font-size: 22px;
+    }
+  }
